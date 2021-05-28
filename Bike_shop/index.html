@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Bikes</title>
+	  <meta name="keywords" content="html,css,javaScript">
+    <meta name="description" content="Bikes">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/mycss.css">
+
+    <!-- Font-awesome 5 cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+  
+
+  </head>
+  <body>
+<!-- Start here -->
+    <div class="container bg-white">
+      <!-- Navigation Bar -->
+      <div class="row">
+        <div class="col-md ">
+          <nav class="navbar navbar-expand navbar-light my-3">
+              <a class="navbar-brand text-uppercase  ml-md-5" href="index.html">
+                <img class="logo" src="img/logo.png">
+              </a>
+              <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar_ul">
+                  <li class="nav-item mx-2 p-3">
+                  <h6 class="nav text-uppercase fw-bold">home</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">bikes</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">gear</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">parts</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">tipes</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">service-info</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">categories</h6>
+                  </li>
+                  <li class="nav-item mx-2 p-3">
+                    <h6 class="nav text-uppercase fw-bold">contact</h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="fafa_div">
+                <span class="nav-item p-3"><i class="fa fa-search fa-lg" aria-hidden="true"></i></span>
+                <span class="nav-item p-3"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              </div>
+          </nav>
+        </div>
+      </div>
+      <hr class="m-0 line">
+<!-- Navigation Bar END -->
+      <div class="row">
+        <div class="">
+          <div class="title">
+            <h1 class="mx-3 col my-4 fw-bolder">Bikes</h1>
+          </div>
+          <hr class="m-0 line">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+<!-- Filter the bikes -->
+          <h3 class="my-3 fw-bolder">Filter by:</h3>
+          <ul class="list-group">
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between align-items-center list-filter showAll">Show all<span class="badge rounded-pill showAllBadge"></span>
+            </li>
+            </ul>
+          <hr class="m-0 line">
+<!-- Filter the bikes by Gender -->
+          <h4 class="my-3 fw-bolder">Gender</h4>
+          <ul class="list-group">
+<!-- Male filtered -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between align-items-center list-filter male">Male<span class="badge rounded-pill maleBadge"></span>
+            </li>
+<!-- Female filtered -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between align-items-center list-filter female">Female<span class="badge  rounded-pill femaleBadge"></span>
+            </li>
+          </ul>
+          <hr class="m-0 line">
+<!-- Filter the bikes by Brand -->          
+          <h4 class="my-4 fw-bolder">Brand</h4>
+          <ul class="list-group">
+<!-- Le Grand Bikes -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter le-grand-bikes">le grand bikes<span class="badge rounded-pill leGrandBadge"></span>
+            </li>
+<!--Kross Bikes  -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter kross">kross<span class="badge  rounded-pill krossBadge"></span>
+            </li>
+<!-- Explorer Bikes -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter explorer">explorer<span class="badge rounded-pill explorerBadge"></span>
+            </li>
+<!-- Visitor Bikes -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter visitor">visitor<span class="badge  rounded-pill visitorBadge"></span>
+            </li>
+<!-- Pony Bikes -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter pony">pony<span class="badge rounded-pill ponyBadge"></span>
+            </li>
+<!-- Force Bikes -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter force">force<span class="badge  rounded-pill forceBadge"></span>
+            </li>
+<!-- E-Bikes  -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter e-bikes">e-bikes<span class="badge rounded-pill ebikesBadge"></span>
+            </li>
+<!-- Ideal Bikes -->
+            <li class="list-group-item p-0 my-3 d-flex justify-content-between text-uppercase  align-items-center list-filter ideal">ideal<span class="badge  rounded-pill idealBadge"></span>
+            </li>
+          </ul>
+          <hr class="m-0 line">
+        </div>
+<!-- The content for Bikes attributes -->
+        <div class="col-9 p-0 my-2">
+          <div id="cards-content" class="d-flex flex-wrap-reverse justify-content-center"></div>
+        </div>
+      </div>
+<!-- Fontawsome Icons for Social share -->
+      <div class="row gray-row">
+        <div class="col-3">
+          <h4 class="my-3">Social share</h4>
+          <div class="fafa_div">
+            <a href="https://www.facebook.com/" class="m-1 p-2 a-fontawsome"><i class="fab fontawsome-class fa-facebook-f fa-lg"></i></a>
+            <a href="https://myaccount.google.com/" class="m-1 p-2 a-fontawsome"><i class="fab fontawsome-class fa-google-plus-g fa-lg"></i></a>
+            <a href="https://twitter.com/?lang=en" class="m-1 p-2 a-fontawsome"><i class="fab fontawsome-class fa-twitter fa-lg"></i></a>
+            <a href="https://www.linkedin.com/" class="m-1 p-2 a-fontawsome"><i class="fab fontawsome-class fa-linkedin-in fa-lg"></i></a>
+          </div> 
+        </div>
+<!-- Event Info list -->
+        <div class="col-3">
+          <div class="border-left">
+            <div class="mx-2">
+              <h4 class="my-3">Event info</h4>
+              <p class="list-filter">Enter Now</p>
+              <p class="list-filter">Info</p>
+              <p class="list-filter">Course Maps</p>
+              <p class="list-filter">Race Pack</p>
+              <p class="list-filter">Results</p>
+              <p class="list-filter">FAOs</p>
+              <p class="list-filter">Am I Registerd?</p>
+            </div>
+          </div>
+        </div>
+<!-- Registracion list -->
+        <div class="col-3">
+          <div class=" border-left">
+            <div class="mx-2">
+              <h4 class="my-3">Registration</h4>
+              <p class="list-filter">Volunteers</p>
+              <p class="list-filter">Gallery</p>
+              <p class="list-filter">Press</p>
+              <p class="list-filter">Results</p>
+              <p class="list-filter">Privacy Policy</p>
+              <p class="list-filter">Service PLus</p>
+              <p class="list-filter">Contacts</p>
+            </div>
+          </div>
+        </div>
+<!-- Schedule list -->
+        <div class="col-3">
+          <div class=" border-left">
+            <div class="mx-2">
+              <h4 class="my-3">Schedule</h4>
+              <p class="list-filter">Galery</p>
+              <p class="list-filter">About</p>
+              <p class="list-filter">Videos</p>
+              <p class="list-filter">Results</p>
+              <p class="list-filter">FAOs</p>
+              <p class="list-filter">Results</p>
+              <p class="list-filter">Volunteers</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+	  <script src="js/main.js"></script>
+
+
+  </body>
+</html>
