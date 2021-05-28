@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 15</title>
+    <style>
+        .body-wrap{
+            font-size: 20px;
+            text-align: center;
+        }
+       
+        .divStyle{
+            margin-bottom: 10px;
+        }
+        .mybtn{
+            color: white;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .bookTable, .myBorder{
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 18px;
+        }
+        #formContent{
+            text-align: center;
+        }
+
+        table, ul{
+            display: inline-block;
+        }
+
+        #myprog {
+            width: 100%;
+            background-color: rgb(172, 172, 172);
+        }
+        #mybar {
+            height: 25px;
+            background-color: #4CAF50;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="body-wrap">
+    <div id="description">
+        <h1>Challenge 15</h1>
+        <h3>Title and Author about each Book:</h3>
+
+        
+    </div>
+
+    <div id="readed">
+        <h3>How much have you read so far from the Book:</h3>
+        
+    </div>
+    <div id="table">
+        <table class="bookTable">
+            <thead>
+                <tr class="myBorder">
+                    <th class="myBorder">Title</th>
+                    <th class="myBorder">Author</th>
+                    <th class="myBorder">On Page</th>
+                    <th class="myBorder">Book Max Pages</th>
+                    <th class="myBorder">Progres</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    
+    </div>
+    <br>
+    <br>
+
+    <div id="formContent">
+        <h3>Add a book to the list:</h3>
+        <div class="divStyle">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" placeholder="Title">
+        </div>
+        <div class="divStyle">
+            <label for="author">Book Author:</label>
+            <input type="text" id="author" placeholder="Author">
+        </div>
+        <div class="divStyle">
+            <label for="currentPages">Book Current Pages:</label>
+            <input type="text" id="currentPages" placeholder="Current Page">
+        </div>
+        <div class="divStyle">
+            <label for="bookPages">Book Pages:</label>
+            <input type="text" id="bookPages" placeholder="Book Max Pages">
+        </div>
+
+        <input type="button" id="btn" class = "mybtn" value="Submit">
+
+    </div>
+</div>
+
+  <script src="./index.js"></script> 
+
+</body>
+</html>
